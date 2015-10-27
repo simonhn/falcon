@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Falcon LinkedIn Demo</title>
+
+  <meta name="description" content="">
+
+  <!-- Mobile-friendly viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Style sheet link -->
+   <link href="css/main.css" rel="stylesheet" media="all">
+
+  <!-- Script links -->
+  <script type="text/javascript" src="js/mustache.js"></script>
+  <script type="text/javascript" src="http://platform.linkedin.com/in.js">
+    api_key: 77geiokpx1xxxu
+    onLoad:  falcon.onLinkedInLoad
+    authorize: true
+  </script>
+  <script src="js/app.js"></script>
+
+</head>
+<body>
+
+  <main role="main">
+
+    <!-- LinkedIn generated login button -->
+    <script type="in/Login"></script>
+
+    <div id="profile" class="hide">
+    </div>
+
+    <!--Profile template in moustache -->
+    <script id="template" type="x-tmpl-mustache">
+      <div>
+        <img src="{{pictureUrl}}"/>
+      </div>
+      <h1>Hello, {{ firstName }}</h1>
+      <div id="description"> {{ headline }}</div>
+      <div id="export">
+        <img src="img/download.png"/>
+        <a href="http://localhost:8000/csv.php?headline={{ headline }}&firstName={{firstName}}&lastname= {{lastName}}&pictureUrl={{pictureUrl}}">export as CSV</a>
+      </div>
+    </script>
+
+  </main>
+
+</body>
+</html>
