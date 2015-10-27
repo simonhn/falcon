@@ -1,0 +1,63 @@
+//colors
+$color_concord_approx: #7d7d77;
+$color_log_cabin_approx: #222;
+
+//fonts
+$font_0: Raleway;
+$font_1: HelveticaNeue;
+$font_2: Helvetica Neue;
+$font_3: Helvetica;
+$font_4: Arial;
+$font_5: sans-serif;
+
+body {
+  font-size: 1.5em;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: $font_0, $font_1, $font_2, $font_3, $font_4, $font_5;
+  color: $color_concord_approx;
+}
+h1 {
+  font-size: 4.2rem;
+  color: $color_log_cabin_approx;
+}
+main {
+  padding-top: 50px;
+  width: 60%;
+  margin: 0 auto;
+  overflow: auto;
+  text-align: center;
+}
+.IN-widget {
+  text-align: center;
+}
+#profile {
+  text-align: center;
+  img {
+    //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+  }
+}
+#export {
+  img {
+    width: 28px;
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    vertical-align: middle;
+  }
+  a {
+    display: inline-block;
+    font-size: 1rem;
+  }
+}
+.show {
+  //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+  transition: opacity 400ms;
+}
+.hide {
+  opacity: 0;
+}

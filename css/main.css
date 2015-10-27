@@ -1,0 +1,45 @@
+body {
+  font-size: 1.5em;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: Raleway, HelveticaNeue, Helvetica Neue, Helvetica, Arial, sans-serif;
+  color: #7d7d77; }
+
+h1 {
+  font-size: 4.2rem;
+  color: #222; }
+
+main {
+  padding-top: 50px;
+  width: 60%;
+  margin: 0 auto;
+  overflow: auto;
+  text-align: center; }
+
+.IN-widget {
+  text-align: center; }
+
+#profile {
+  text-align: center; }
+  #profile img {
+    border-radius: 50%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto; }
+
+#export img {
+  width: 28px;
+  display: inline-block;
+  margin-right: 8px;
+  position: relative;
+  vertical-align: middle; }
+
+#export a {
+  display: inline-block;
+  font-size: 1rem; }
+
+.show {
+  transition: opacity 400ms; }
+
+.hide {
+  opacity: 0; }
