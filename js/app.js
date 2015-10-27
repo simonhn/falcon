@@ -16,7 +16,7 @@ var falcon = {
     Mustache.parse(template);
     var rendered = Mustache.render(template, person);
 
-    /* Insert renderet content into profile div */
+    /* Insert rendered content into profile div */
     profileDiv.innerHTML = rendered;
 
     /* Fade in the profile */
